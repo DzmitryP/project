@@ -1,0 +1,524 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    margin: 0px;
+}
+
+#top-header {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1E1F29;
+}
+
+.headerTop{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+
+.headerLinksLeft{
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+
+.headerLinksRight{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerMain{
+    display: flex;
+    background-color: #15161D;
+    height: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.headerMainContainer{
+    display: flex;
+    align-items: center;
+}
+
+.containerLogo{
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+}
+
+.containerLogo img{
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+}
+
+.container i{
+    padding-right: 5px;
+    padding-left: 15px;
+    font-size: 15px;
+    color: #D10024;
+}
+
+.containerBasketWish{
+    display: flex; 
+    justify-content: flex-end;
+    width: 25%;
+}
+
+.containerWishList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerWishList i{
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.containerBasket{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerBasket i {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    justify-content: center;
+    font-size: 10px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D10024;
+}
+
+a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding-right: 10px;
+    word-wrap: normal;
+    cursor: pointer;
+}
+
+a:hover, a:focus {
+    color: #D10024;
+    text-decoration: none;
+    outline: none;
+}
+
+.loginInput{
+    width: 170px;
+    height: 15px;
+    border: 0px;
+    border-radius: 5px;
+    outline: none;
+    border-style: inset;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.passwordInput {
+    width: 170px;
+    height: 15px;
+    border: 0px;
+    border-radius: 5px;
+    outline: none;
+    border-style: inset;
+    padding: 5px;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.orderInput{
+    width: 350px;
+    height: 20px;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px;
+    font-size: 15px;
+    margin-right: 20px;
+    margin: 20px;
+}
+
+.orderInput:first-child{
+    margin-bottom: 0px;
+}
+
+.orderTextarea{
+    max-width: 355px;
+    height: 150px;
+    border: 1px solid gray;
+    outline: none;
+    margin-left: 20px;
+    font-size: 15px;
+
+}
+
+.submitInput{
+    background-color: #D10024;
+    border: 0px;
+    font-size: 14px;
+    outline: none;
+    color: white;
+    width: 150px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.errMessage{
+    color: red;
+}
+
+.message{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    height: 20px;
+}
+
+.content{
+    display: flex;
+    width: 1170px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    transition: 0.4s;
+    width: 265px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.card p{
+    padding: 5px;
+}
+
+.cardImgcontainer img:hover{
+    opacity: 70%;
+    width: 200px;
+    height: 200px;
+}
+
+.cardButton{
+    color: white;
+    background-color: #D10024;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 25px;
+    transition: 0.7s;
+    height: 30px;
+
+}
+
+.cardImgcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    width: 260px;
+}
+
+.cardButton:hover{
+    background-color: #ff0530;
+}
+
+.containerButtonPrice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logoTitle{
+    color: white;
+    font-size: 45px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+
+.orderPreview{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    min-height: 200px;
+    background-color: #f7fcff;
+    position: fixed;
+    border-radius: 20px;
+    top: 45px;
+    right: 150px;
+}
+.containerBusketProdukts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.containerBusketProdukts i {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.priceTitleBasket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -45px;
+    height: 80px;
+}
+
+.titleHeaderBasket{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.titleCloseBasketContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.closeBasket{
+    padding: 15px;
+    cursor: pointer;
+}
+
+.closeBasket i{
+    color: #181717;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.orderImg{
+    width: 75px;
+    height: 75px;
+    padding: 5px;
+}
+
+.filterContainer{
+    display: flex;
+    height: 50px;
+}
+
+.filter{
+    display: flex;
+    margin: 0 auto;
+    width: 1170px;
+    align-items: center;
+    color: #15161D;
+    justify-content: space-around;
+}
+
+.filter button{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: none;
+    border: 2px solid black;
+    outline: none;
+    width: 100px;
+    margin-top: 15px;
+}
+
+
+.filter .spicyActive {
+    background-color: #D10024;
+}
+
+.filter .veggiActive{
+    background-color: #D10024;
+}
+
+.filter .classicActive{
+    background-color: #D10024;
+}
+
+.compositions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: rgb(62, 63, 63);
+}
+
+.orderButtonContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.orderButton{
+    font-size: 15px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #D10024;
+    color: white;
+    margin: 15px;
+}
+
+.orderCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    width: 500px;
+    height: 150px;
+    border-bottom: 1px solid black;
+}
+
+.orderCard:first-child{
+    border-top: 1px solid black;
+}
+
+.orderCard img{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.orderCard p {
+    padding: 20px;
+    font-weight: bolder;
+    align-self: flex-start;
+}
+
+.titleOrderDetiles, .priceOfOrders{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 45px;
+}
+
+.priceCloseOrder{
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.priceCloseOrder i {
+    color: #D10024;
+    cursor: pointer;
+}
+
+.orderTexInformation{
+    display: flex;
+    width: 50%;
+}
+
+.buttonsOrder{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 500px;
+}
+
+.confirmButton{
+    font-size: 15px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #D10024;
+    color: white;
+    margin: 15px;
+}
+
+.goBackButton{
+    font-size: 15px;
+    box-shadow: none;
+    outline: none;
+    border: 2px solid black;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    margin: 15px;
+}
+.mainOrderContainer{
+    display: flex;
+    justify-content: center
+}
+
+.orderPageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.orderFormContainer{
+    display: flex;
+    margin-top: 90px;
+}
+
+.formOrder{
+    display: flex;
+    flex-direction: column;
+}
+
+.successfulMessageContainer{
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.successfulMessage{
+    font-size: 25px;
+    color: black;
+    font-weight: bolder;
+    
+}
